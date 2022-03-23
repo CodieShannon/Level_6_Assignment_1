@@ -1,0 +1,166 @@
+/* Custom */
+/* ========================================== */
+:root{    
+  --primary: rgb(53, 54, 58);
+  --secondary: rgb(37, 37, 37);
+  --tertiary: rgb(119, 119, 119);
+
+  --navlink: rgb(170, 170, 170);
+  --navlink-hover: rgb(230, 230, 230);
+}
+
+@font-face {
+  font-family: "ITC Bauhaus Demi";
+
+  src: url("..\\fonts/itc-bauhaus-demi.woff2") format('woff2'),
+       url("..\\fonts/itc-bauhaus-demi.woff") format('woff'),
+       url("..\\fonts/itc-bauhaus-demi.ttf")  format('truetype');
+
+  font-display: swap;
+}
+
+/* Main */
+/* ========================================== */
+body{
+  color: white;
+  font-family:'ITC Bauhaus Demi';
+
+  text-align: center;
+
+  margin: 0;
+
+  background-color: var(--primary);
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Text */
+/* ========================================== */
+h1, h2, h3{ margin: 0 0 10px; }
+
+h1{ font-size: 29px; }
+
+h2{ font-size: 21px; }
+
+h3{ font-size: 18px; }
+
+p, ol{ white-space: pre-line; }
+
+ol{ text-align: left; }
+
+/* Navigation */
+/* ========================================== */
+nav{
+  width: 100%;
+
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+  border-bottom: 1px solid var(--tertiary);
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background-color: var(--secondary);
+}
+
+#nav-logo{
+  position: absolute;
+  left: 0;
+  padding: 5px 20px;
+
+  display: none;
+}
+
+.nav-item{
+  font-size: 18px;
+  text-decoration: none;
+
+  margin: 0px 10px;
+
+  display: inline-block;
+}
+
+.nav-item:first-of-type{ padding-top: 15px; }
+
+.nav-item:first-of-type, .nav-item:last-of-type{ padding-bottom: 15px; }
+
+.nav-item{ color: var(--navlink); }
+
+.nav-item:hover{ color: var(--navlink-hover); }
+
+/* Other */
+/* ========================================== */
+.wrapper, #subject-image{ width: 100%; }
+
+.border{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--tertiary);
+}
+
+.headerblock, .imageblock, .textblock{
+    margin-top: 5px;
+
+    background-color: var(--secondary);
+}
+
+.headerblock, .imageblock{ padding: 10px; }
+
+.textblock{ padding: 20px; }
+
+.textblock:last-of-type{ margin-bottom: 5px; }
+
+@media only screen and (min-width: 420px) {
+  /* Navigation */
+  /* ========================================== */
+  #navbreak{ display: none; }
+}
+
+@media only screen and (min-width: 850px) {
+  /* Text */
+  /* ========================================== */
+  h1{ font-size: 32px; }
+
+  h2{ font-size: 24px; }
+
+  h3{ font-size: 21px; }
+
+  /* Other */
+  /* ========================================== */
+  .imageblock{ padding: 20px; }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Text */
+  /* ========================================== */
+  h1{ font-size: 35px; }
+
+  h2{ font-size: 27px; }
+
+  h3{ font-size: 23px; }
+
+  /* Navigation */
+  /* ========================================== */
+  .nav-item{ padding: 25px 10px; }
+
+  /* Other */
+  /* ========================================== */
+  .wrapper{ width: 1000px; margin: auto; }
+
+  #subject-image{ height: 550px; object-fit: contain; }
+
+  .border{ border: 1px solid var(--tertiary); }
+
+  .headerblock, .imageblock, .textblock{ margin-top: 7px; }
+  
+  .textblock:last-of-type{ margin-bottom: 7px; }
+}
+
+@media only screen and (min-width: 1100px) {
+  /* Navigation */
+  /* ========================================== */
+  #nav-logo{ display: inherit; }
+}
