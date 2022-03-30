@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Level_6_Assignment_1/static/css/main.00799cd4.css",
+    "main.js": "/Level_6_Assignment_1/static/js/main.c19d5cfd.js",
+    "static/media/itc-bauhaus-demi.ttf": "/Level_6_Assignment_1/static/media/itc-bauhaus-demi.e4ce72d4b6267f75ad75.ttf",
+    "static/media/itc-bauhaus-demi.woff": "/Level_6_Assignment_1/static/media/itc-bauhaus-demi.0ec72d5adf3ec445f14f.woff",
+    "static/media/itc-bauhaus-demi.woff2": "/Level_6_Assignment_1/static/media/itc-bauhaus-demi.ee5bcdf46f5392491992.woff2",
+    "index.html": "/Level_6_Assignment_1/index.html",
+    "main.00799cd4.css.map": "/Level_6_Assignment_1/static/css/main.00799cd4.css.map",
+    "main.c19d5cfd.js.map": "/Level_6_Assignment_1/static/js/main.c19d5cfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00799cd4.css",
+    "static/js/main.c19d5cfd.js"
+  ]
+}
