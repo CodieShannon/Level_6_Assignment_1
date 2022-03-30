@@ -31,14 +31,14 @@ function Loader(index)
                     <div className="textblock border">
                         <article>
                             <h2>Special Containment Procedures:</h2>
-                            <p>{subject.containment.replaceAll('<br>', '\n')}</p>
+                            <p>{subject.containment}</p>
                         </article>
                     </div>
 
                     <div className="textblock border">
                         <article>
                             <h2>Description:</h2>
-                            <p>{subject.description.replaceAll('<br>', '\n')}</p>
+                            <p>{subject.description}</p>
                         </article>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ function Nav()
     return(
         <nav>
             <picture id="nav-logo">
-                <source src="./images/logo.png" type="image/webp"/>
+                <source src="./images/logo.webp" type="image/webp"/>
                 <img src="./images/logo.png" alt="Company Logo"/>
             </picture>
             <Link className='nav-item' to="/">SCP-002</Link>
